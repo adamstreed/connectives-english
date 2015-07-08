@@ -10,12 +10,14 @@ DICT = {
           True: [
                  'Snow is white', 'Grass is green', 'The Earth is round',
                  'Cats are mammals', 'Whales are mammals',
-                 'Benjamin Franklin invented the lightning rod'], 
+                 'Benjamin Franklin invented the lightning rod', 
+                 'Chicago is in Illinois', 'A BLT is a sandwich'], 
           False: [
                   'Snow is black', 'Grass is orange', 'The Earth is flat',
                   'Lobsters are mammals', 'Dolphins are fish',
-                  'Michigan borders Idaho']
-          }
+                  'Michigan borders Idaho', 'Every dog is a greyhound',
+                  'Motor oil is edible']
+        }
 
 #right = "\n    Correct!\n"
 
