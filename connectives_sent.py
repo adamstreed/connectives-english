@@ -8,20 +8,33 @@ VALUES = [True, False]
 
 DICT = {
           True: [
-                 'Snow is white', 'Grass is green', 'The Earth is round',
-                 'Cats are mammals', 'Whales are mammals',
+                 'Snow is white', 
+                 'Grass is green', 
+                 'The Earth is round',
+                 'Cats are mammals', 
+                 'Whales are mammals',
                  'Benjamin Franklin invented the lightning rod', 
-                 'Chicago is in Illinois', 'A BLT is a sandwich'], 
+                 'Chicago is in Illinois', 
+                 'A BLT is a sandwich', 
+                 'Peanut butter is made from peanuts'
+                 'Apples are fruits'
+                 'Some plants are edible'
+                 'Squares have four sides'], 
           False: [
-                  'Snow is black', 'Grass is orange', 'The Earth is flat',
-                  'Lobsters are mammals', 'Dolphins are fish',
-                  'Michigan borders Idaho', 'Every dog is a greyhound',
-                  'Motor oil is edible']
+                  'Snow is black', 
+                  'Grass is orange', 
+                  'The Earth is flat',
+                  'Lobsters are mammals', 
+                  'Dolphins are fish',
+                  'Michigan borders Idaho', 
+                  'Every dog is a greyhound',
+                  'Motor oil is edible', 
+                  'Freddie Mercury was a U.S. president'
+                  'Detroit is in Iowa'
+                  'Cacti are animals'
+                  'Triangles have four sides']
         }
 
-#right = "\n    Correct!\n"
-
-#wrong = "\n    Sorry, the answer was'{0}'.\n".format(answer)
 
 def find_bool(sent):
     if sent in DICT.items()[0][1]:
@@ -32,7 +45,8 @@ def find_bool(sent):
 def produce_pair():
     global pair
     pair = [DICT[random.choice(VALUES)][random.randint(0, len(DICT[True]) - 1)], 
-            DICT[random.choice(VALUES)][random.randint(0, len(DICT[True]) - 1)]]
+            DICT[random.choice(VALUES)][random.randint(0, len(DICT[True]) - 1)]
+            ]
 
 def test_conj():
     produce_pair()
